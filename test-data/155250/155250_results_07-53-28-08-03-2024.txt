@@ -1,0 +1,15 @@
+***SESSION HEADER***
+{
+  "Participant": "155250",
+  "Timestamp": "07-53-28-08-03-2024"
+}
+---SESSION HEADER---
+***TEST HEADER***
+
+---TEST HEADER---
+Timestamp;TrialName;Phase;TotalTime;Times;TotalTrajectory;Trajectories;CollectionItemsPicked;ItemList;CollectionItemsCorrect;OrderErrors;PlacementErrors;LocationErrors;
+28783.1122;Trial3;recall;220.52;(4.79,27.58,26.56,24.24,22.39,22.19,18.32,20.02,17.55,26.14,7.15,3.59);824.40;(6.50,96.10,79.27,103.77,98.93,82.68,79.92,83.04,76.55,110.94,6.70,0.00);5;(Vláček, Talíře, Reproduktor, Holub, Vlk);5;0;0;0;
+29053.7967;Trial1;recall;222.95;(29.89,22.54,21.23,28.66,23.59,21.16,18.25,19.14,19.52,18.98);919.57;(115.51,99.81,95.54,106.43,102.99,81.69,76.22,79.66,79.90,81.83);5;(Sova, Konev, Sanitka, Mikrovlnka, Kráva);5;0;0;0;
+29421.8887;Trial2;recall;271.38;(21.56,23.71,18.69,74.65,22.83,18.19,18.34,25.22,26.31,21.90);982.56;(86.30,84.49,81.30,182.44,98.52,76.87,75.47,107.57,109.30,80.30);5;(Lev, Notebook, Kladivo, Kartáček, Kačer);5;0;0;0;
+29707.9823;Trial0;recall;211.38;(20.96,20.31,16.78,20.43,19.12,23.24,20.86,27.53,23.94,18.20);892.86;(81.52,75.36,72.99,85.01,80.50,99.64,94.40,114.66,109.68,79.10);5;(Prase, Konvice, Xylofon, Slepice, Koza);5;2;0;2;
+29750.7454;Trial0;recall;0.00;();0.00;();5;();0;2;0;2;

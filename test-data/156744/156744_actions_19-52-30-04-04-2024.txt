@@ -1,0 +1,38 @@
+***SESSION HEADER***
+{
+  "Participant": "156744",
+  "Timestamp": "19-52-30-04-04-2024"
+}
+---SESSION HEADER---
+***TEST HEADER***
+
+---TEST HEADER---
+Timestamp;Action;ItemName;Position;Location;DistanceToOrigin;OrderInTrial;TrialName;TrajectoryLength;ElapsedTime;Phase;
+71891.3537;picked;Prase;(97.25, 10.59, 202.11);church;0.00;0;Trial0;0.00;0.00;pickup;
+71955.2594;picked;Konvice;(88.79, 10.60, 65.66);railway;0.00;1;Trial0;145.53;86.26;pickup;
+72021.2691;picked;Slepice;(201.59, 13.88, 182.76);lighthouse;0.00;2;Trial0;166.19;68.52;pickup;
+72085.1797;picked;Xylofon;(43.13, 10.71, 108.36);storage;0.00;3;Trial0;220.40;67.53;pickup;
+72141.2641;picked;Koza;(176.22, 10.68, 71.62);hotel;0.00;4;Trial0;202.96;63.08;pickup;
+72225.5082;picked;Sova;(43.13, 10.71, 108.36);radar;0.00;0;Trial1;0.00;0.00;pickup;
+72298.8769;picked;Konev;(201.59, 13.88, 182.76);playground;0.00;1;Trial1;187.49;81.63;pickup;
+72364.3204;picked;Kráva;(176.22, 10.68, 71.62);theater;0.00;2;Trial1;222.72;73.45;pickup;
+72421.1041;picked;Mikrovlnka;(97.25, 10.59, 202.11);office;0.00;3;Trial1;169.79;62.48;pickup;
+72475.5397;picked;Sanitka;(88.79, 10.60, 65.66);dock;0.00;4;Trial1;170.78;55.07;pickup;
+72571.1565;picked;Lev;(88.79, 10.60, 65.66);airport;0.00;0;Trial2;0.00;0.00;pickup;
+72625.7259;picked;Kartáček;(43.13, 10.71, 108.36);cemetery;0.00;1;Trial2;172.61;90.44;pickup;
+72682.0605;picked;Kladivo;(97.25, 10.59, 202.11);hospital;0.00;2;Trial2;192.15;58.78;pickup;
+72742.1906;picked;Notebook;(201.59, 13.88, 182.76);well;0.00;3;Trial2;152.86;52.64;pickup;
+72819.6738;picked;Kačer;(176.22, 10.68, 71.62);coffee;0.00;4;Trial2;210.21;66.59;pickup;
+72911.3779;picked;Vláček;(176.22, 10.68, 71.62);museum;0.00;0;Trial3;0.00;0.00;pickup;
+72963.8321;picked;Talíře;(43.13, 10.71, 108.36);factory;0.00;1;Trial3;171.87;86.26;pickup;
+73018.9167;picked;Reproduktor;(88.79, 10.60, 65.66);busstation;0.00;2;Trial3;200.77;57.72;pickup;
+73066.4427;picked;Holub;(97.25, 10.59, 202.11);post;0.00;3;Trial3;166.27;49.34;pickup;
+73124.6087;picked;Vlk;(201.59, 13.88, 182.76);camp;0.00;4;Trial3;165.50;47.58;pickup;
+73225.1716;picked;Sanitka;(127.62, 11.29, 144.83);fountain;88.20;4;Trial1;0.00;0.00;recallItems;
+73265.3198;picked;Reproduktor;(126.32, 11.29, 119.84);fountain;65.90;4;Trial1;0.00;0.00;recallItems;
+73284.2200;dropped;Sanitka;(116.98, 11.83, 126.29);fountain;66.90;4;Trial1;0.00;0.00;recallItems;
+73287.6832;picked;Sanitka;(116.98, 11.83, 126.29);fountain;66.90;4;Trial1;0.00;0.00;recallItems;
+73296.9423;dropped;Reproduktor;(122.20, 11.28, 150.37);fountain;91.10;4;Trial1;0.00;0.00;recallItems;
+73309.6639;dropped;Sanitka;(122.73, 11.28, 150.36);fountain;91.20;4;Trial1;0.00;0.00;recallItems;
+73314.6593;picked;Prase;(122.26, 11.29, 144.52);fountain;62.80;3;Trial1;0.00;0.00;recallItems;
+73361.0859;dropped;Prase;(121.61, 11.28, 113.88);fountain;91.50;3;Trial1;0.00;0.00;recallItems;

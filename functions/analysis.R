@@ -25,31 +25,38 @@ analyze_session <- function(exp) {
   df_placement <- data.frame()
   i_items <- get_finished_phases(exp, "recallItems")
   i_placement <- get_finished_phases(exp, "recallPlacement")
+
   if (length(i_items) == 0 || length(i_placement) == 0) {
-    warning("Skipping analysis of ", exp$participant, " timestamp: ", exp$timestamp, 
+    warning("Skipping analysis of ", exp$participant,
+            " timestamp: ", exp$timestamp,
             " because it has no recallItems or recallPlacement phases")
     return(NULL)
   }
   if (length(i_items) != length(i_placement)) {
-    warning("Skipping analysis of ", exp$participant, " timestamp: ", exp$timestamp, 
-             " because it has different number of recallItems and recallPlacement phases")
+    warning("Skipping analysis of ", exp$participant,
+            " timestamp: ", exp$timestamp, " because it has different number ",
+            "of recallItems and recallPlacement phases")
     return(NULL)
   }
   for (i_phase in i_items) {
     collection <- get_recallItems_data(exp, i_phase)
     if (nrow(get_actions_log(collection)) == 0) {
-      warning("Skipping analysis of ", exp$participant, " timestamp: ", exp$timestamp,
-              "phase: ", i_phase, " because collection log has no actions")
+      warning("Skipping analysis of ", exp$participant,
+              " timestamp: ", exp$timestamp, "phase: ", i_phase,
+              " because collection log has no actions")
       next
     }
     placement <- get_recallPlacement_data(exp, i_phase)
     if (nrow(get_actions_log(placement)) == 0) {
-      warning("Skipping analysis of ", exp$participant, " timestamp: ", exp$timestamp,
-              "phase: ", i_phase, " because placement log has no actions")
+      warning("Skipping analysis of ", exp$participant,
+              " timestamp: ", exp$timestamp, "phase: ", i_phase,
+              " because placement log has no actions")
       next
     }
     res_collection <- vremt_collection_performance(collection)[["summary"]]
     res_placement <- vremt_placement_performance(placement)
+    res_placement$trial_name <- placement$data$actions_log$data$trial_name[1]
+    res_placement <- distinct(res_placement)
     res_collection$phase <- i_phase
     res_placement$phase <- i_phase
     df_collection <- rbind(df_collection, res_collection)

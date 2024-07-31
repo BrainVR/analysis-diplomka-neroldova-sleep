@@ -3,8 +3,8 @@ library(tidyr)
 
 dir.create("processed", showWarnings = FALSE)
 
-df_collection <- read.csv(df_collection, "processed/collection.csv")
-df_placement <- read.csv(df_placement, "processed/placement.csv")
+df_collection <- read.csv("processed/collection.csv")
+df_placement <- read.csv("processed/placement.csv")
 
 View(df_collection)
 
@@ -12,7 +12,7 @@ df_collection %>%
   group_by(timestamp) %>%
   summarise(total_missing_items = sum(n_missing_items),
             total_extra_items = sum(n_extra_items),
-            n_correct_items = sum(n_extra_items),
+            n_correct_items = sum(n_correct_items),
             time_of_day = time_of_day[1],
             participant = participant[1]) %>%
   write.csv("processed/collection_aggregated_timestamp.csv")
@@ -21,7 +21,7 @@ df_collection %>%
   group_by(timestamp) %>%
   summarise(total_missing_items = sum(n_missing_items),
             total_extra_items = sum(n_extra_items),
-            total_correct_items = sum(n_extra_items),
+            total_correct_items = sum(n_correct_items),
             time_of_day = time_of_day[1],
             participant = participant[1]) %>%
   pivot_wider(names_from = time_of_day, id_cols = c(timestamp, participant),

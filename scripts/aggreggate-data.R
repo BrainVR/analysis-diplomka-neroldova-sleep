@@ -50,7 +50,6 @@ df_placement %>%
               values_from = c(total_order_error, total_arm_correct, total_location_correct)) %>%
   write.csv("processed/placement_aggregated_trialname.csv")
 
-
 df_placement %>%
   group_by(timestamp) %>%
   summarise(total_order_error = sum(abs(order_error)),

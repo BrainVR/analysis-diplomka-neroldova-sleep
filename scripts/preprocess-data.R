@@ -6,8 +6,8 @@ load("data/participants.RData")
 
 df_collection <- data.frame()
 df_placement <- data.frame()
+
 for (participant in participants) {
-  message("analyzing participant ", participant[[1]]$participant)
   res <- analyze_participant(participant)
   if (is.null(res)) next
   df_collection <- rbind(df_collection, res$collection)
@@ -22,4 +22,4 @@ write.csv(df_collection, "processed/collection.csv")
 write.csv(df_placement, "processed/placement.csv")
 
 
-get_recallPlacement_data(participants[[3]][[2]], 2)$data$actions_log$data$trial_name[1]
+View(df_collection)

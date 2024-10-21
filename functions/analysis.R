@@ -1,11 +1,11 @@
 analyze_participant <- function(exps) {
-  message("Analyzing participant ", exps[[1]]$participant)
   message("--------------------")
+  message("Analyzing participant ", exps[[1]]$participant)
   df_collection <- data.frame()
   df_placement <- data.frame()
   for (i_exp in seq_along(exps)) {
     exp <- exps[[i_exp]]
-    message("Analysisng experiment ", exp$timestamp)
+    message("Analyzing experiment ", exp$timestamp)
     res <- analyze_session(exp)
     if (is.null(res)) next
     df_collection <- rbind(df_collection, res$collection)

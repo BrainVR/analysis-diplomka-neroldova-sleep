@@ -18,8 +18,7 @@ df_collection$time_of_day <- morning_evening(df_collection$timestamp)
 df_placement$time_of_day <- morning_evening(df_placement$timestamp)
 
 dir.create("processed", showWarnings = FALSE)
-write.csv(df_collection, "processed/collection.csv")
-write.csv(df_placement, "processed/placement.csv")
-
+write.csv(df_collection, "processed/collection.csv", row.names = FALSE)
+write.csv(df_placement, "processed/placement.csv", row.names = FALSE)
 
 View(df_collection)
